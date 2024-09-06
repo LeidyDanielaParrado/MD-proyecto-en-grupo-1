@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Notas - Saneamiento Ambiental SAS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aplicación de Notas: Saneamiento Ambiental SAS</h1>
+    </header>
+
+    <section id="note-form">
+        <h2>Crear Nota</h2>
+        <form id="form" aria-labelledby="note-form">
+            <label for="note-title">Título de la Nota:</label>
+            <input type="text" id="note-title" placeholder="Problema detectado..." required aria-required="true">
+
+            <label for="note-description">Descripción:</label>
+            <textarea id="note-description" placeholder="Describe el problema detectado..." required aria-required="true"></textarea>
+
+            <label for="note-date">Fecha de Inspección:</label>
+            <input type="date" id="note-date" required aria-required="true">
+
+            <button type="submit">Agregar Nota</button>
+        </form>
+    </section>
+
+    <section id="notes-list">
+        <h2>Lista de Notas</h2>
+        <ul id="notes" aria-labelledby="notes-list"></ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
